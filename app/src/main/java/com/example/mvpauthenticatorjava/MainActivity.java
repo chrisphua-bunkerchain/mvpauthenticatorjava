@@ -11,7 +11,6 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.mvpauthenticatorjava.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
 

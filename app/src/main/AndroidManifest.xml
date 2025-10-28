@@ -8,7 +8,6 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"
         tools:ignore="ForegroundServicesPolicy" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <queries>
@@ -40,14 +39,13 @@
             android:screenOrientation="portrait"
             tools:replace="screenOrientation" />
 
-        <service
-            android:name=".service.MyService"
-            android:exported="true"
-            android:foregroundServiceType="dataSync">
+        <receiver
+            android:name=".service.ExternalReceiver"
+            android:exported="true">
             <intent-filter>
-                <action android:name=".service.MyService" />
+                <action android:name="com.example.mvpauthenticatorkotlin.ACTION_MVP_RESULT" />
             </intent-filter>
-        </service>
+        </receiver>
     </application>
 
 </manifest>
