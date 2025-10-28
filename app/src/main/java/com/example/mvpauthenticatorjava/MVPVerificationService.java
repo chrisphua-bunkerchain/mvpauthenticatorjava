@@ -19,7 +19,7 @@ import java.util.List;
 public final class MVPVerificationService {
     private static final String TAG = MVPVerificationService.class.getSimpleName();
 
-    private static final String MVP_APP_SCHEME = "bunkerchain";
+    private static final String MVP_APP_SCHEME = "marinevesselpass";
 
     public static final String MVP_APP_PACKAGE = "com.bunkerchain.mvp_app";
 
