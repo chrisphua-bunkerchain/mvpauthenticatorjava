@@ -50,7 +50,7 @@ public class FirstFragment extends Fragment {
 
 
     /**
-     * BroadcastReceiver to receive the result of the MVP verification from MvpResultReceiver.
+     * BroadcastReceiver to receive the result of the MVP verification from ExternalReceiver.
      */
     private final BroadcastReceiver internalReceiver = new BroadcastReceiver() {
         @Override
